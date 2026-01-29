@@ -28,11 +28,10 @@ void inputMarks(int* &arr, int& size) //size is passed by reference so that it c
 	size = numberOfStudents; //set size to numberOfStudents so that it can be used in other functions
 
 	//input marks
-	cout << "Enter marks of " << numberOfStudents << " students: " << endl;
+	cout << "Enter marks for " << numberOfStudents << " students: " << endl;
 	
-	//loop to input marks
+	//loop to input marks separated by newline
 	for (int i = 0; i < numberOfStudents; ++i) {
-		cout << "Student " << (i + 1) << ": ";
 		cin >> arr[i];
 	}
 }
